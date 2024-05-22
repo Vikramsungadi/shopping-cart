@@ -1,5 +1,7 @@
-START
+### Pseudocode for Shopping Cart Application
 
+```javascript
+// Function to create an HTML element
 Function createElem(tag, attributes = {}, textContent = '', children = [])
     elem = document.createElement(tag)
     For each attribute in attributes
@@ -14,8 +16,7 @@ Function createElem(tag, attributes = {}, textContent = '', children = [])
     Return elem
 End Function
 
-Function createProduct(id, image, title, vendor, price, compare_at_price, badge_text)
-    product = {
+DummyProductData = {
         "id": id,
         "image": image,
         "title": title,
@@ -25,9 +26,7 @@ Function createProduct(id, image, title, vendor, price, compare_at_price, badge_
         "badge_text": badge_text,
         "quantity": 1
     }
-    Return product
-End Function
-
+// Function to add a product to the cart
 Function addToCart(cart, product)
     For i from 0 to length(cart) - 1
         If cart[i].id == product.id
@@ -41,6 +40,7 @@ Function addToCart(cart, product)
     Return cart
 End Function
 
+// Function to remove a product from the cart
 Function removeFromCart(cart, productId)
     For i from 0 to length(cart) - 1
         If cart[i].id == productId
@@ -51,6 +51,7 @@ Function removeFromCart(cart, productId)
     Return cart
 End Function
 
+// Function to calculate total price
 Function calculateTotalPrice(cart)
     totalPrice = 0
     For i from 0 to length(cart) - 1
@@ -59,14 +60,12 @@ Function calculateTotalPrice(cart)
     Return totalPrice
 End Function
 
+// Function to calculate average price
 Function calculateAveragePrice(cart)
-    If length(cart) == 0
-        Return 0
-    End If
-    totalPrice = calculateTotalPrice(cart)
-    Return totalPrice / length(cart)
+    Return length(cart) == 0 ? 0 : calculateTotalPrice(cart) / length(cart)
 End Function
 
+// Function to filter products by price
 Function filterProducts(cart, priceThreshold)
     filteredProducts = []
     For i from 0 to length(cart) - 1
@@ -77,6 +76,7 @@ Function filterProducts(cart, priceThreshold)
     Return filteredProducts
 End Function
 
+// Function to sort the cart by price
 Function sortCart(cart, order)
     If order == "asc"
         Sort cart by price in ascending order
@@ -86,13 +86,10 @@ Function sortCart(cart, order)
     Return cart
 End Function
 
+// Function to clear the cart
 Function clearCart()
     cart = []
     Print "Your cart is empty"
     Return cart
 End Function
 
-product1 = createProduct('1', './assets/shirt-1.webp', 'Product 1', 'Vendor 1', 500, 1000, 'New')
-cart = addToCart(cart, product1)
-
-END
