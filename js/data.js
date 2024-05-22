@@ -1,15 +1,6 @@
 export const dummyProducts = [
 	{
-		id: '1488e5df-1b35-4bb4-8528-8f0b577c448b',
-		image: './assets/shirt-1.webp',
-		title: 'Product 1',
-		vendor: 'Vendor 1',
-		price: '500',
-		compare_at_price: '1000',
-		badge_text: 'New',
-	},
-	{
-		id: '11ad19a1-e558-4093-8e37-dc94ce5a0aa1',
+		id: '1',
 		image: './assets/shirt-2.webp',
 		title: 'Product 2',
 		vendor: 'Vendor 2',
@@ -18,7 +9,7 @@ export const dummyProducts = [
 		badge_text: 'Sale',
 	},
 	{
-		id: '7977233b-94d8-4b48-9bc3-1e73c42b521d',
+		id: '2',
 		image: './assets/shirt-3.webp',
 		title: 'Product 3',
 		vendor: 'Vendor 3',
@@ -27,12 +18,21 @@ export const dummyProducts = [
 		badge_text: 'Exclusive',
 	},
 	{
-		id: '0ea09f9d-ba41-4a05-9781-07ff7665db9a',
+		id: '3',
 		image: './assets/shorts-4.webp',
 		title: 'Product 4',
 		vendor: 'Vendor 4',
 		price: '200',
 		compare_at_price: '400',
 		badge_text: '',
+	},
+	{
+		id: '4',
+		image: './assets/shirt-1.webp',
+		title: 'Product 1',
+		vendor: 'Vendor 1',
+		price: '500',
+		compare_at_price: '1000',
+		badge_text: 'New',
 	},
 ];
