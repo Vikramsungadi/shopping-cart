@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Shopping Cart</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="styles.css" />
+		<script src="script.js" type="module" defer></script>
+	</head>
+	<body>
+		<header>
+			<h1>Shopping Cart</h1>
+
+			<img class="cart-icon" src="./assets/cart-large-minimalistic-svgrepo-com.svg" alt="" />
+		</header>
+
+		<main>
+			<div class="products">
+				<!-- <div class="product-card">
+					<div class="imgWrapper">
+						<img src="./assets/shirt-1.webp" alt="Green Charm" />
+					</div>
+					<div class="product-details">
+						<div class="name-details">
+							<p class="title line-clamp-1">Green Charm</p>
+							<span class="dot"></span><span class="vendor">Myntra</span>
+						</div>
+						<div class="price-details">
+							<span class="discount-price">Rs&nbsp;<span>1399</span></span
+							><span class="price">1499</span><span class="discount">7% Off</span>
+						</div>
+					</div>
+					<button class="primary-btn">Add to Cart</button><span class="badge">On offer</span>
+				</div> -->
+			</div>
+			<div class="cart hidden">
+				<div class="cart-products-wrapper">
+					<div class="cart-btns">
+						<select name="sort" id="sort" class="sort-btn">
+							<option value="asc" selected>Low to high</option>
+							<option value="dsc">High to Low</option>
+						</select>
+						<!-- <button class="sort-btn">Sort</button> -->
+						<button class="clear-cart">Clear</button>
+					</div>
+					<img class="close-icon" src="./assets/wrong.svg" alt="" />
+					<div class="cartProducts">
+						<!-- <div class="cart-product">
+              <div class="detail">
+                <div>Product 1</div>
+                <div>
+                  <span>200</span> x
+                  <span class="noOfItems">2</span>
+                </div>
+              </div>
+              <img src="./assets/shirt-1.webp" alt="" />
+            </div>
+            <img class="close-icon" src="./assets/wrong.svg" alt="" />
+            <div class="total-price">
+              <p>Total Price</p>
+              <span>400</span>
+            </div> -->
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
