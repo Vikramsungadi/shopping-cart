@@ -208,8 +208,6 @@ h1 {
 	align-items: center;
 }
 .noOfItems {
-	/* width: fit-content;
-	margin-left: auto; */
 	font-size: 0.75rem;
 	color: gray;
 }
